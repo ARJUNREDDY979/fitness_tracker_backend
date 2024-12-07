@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Reddy - Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+header nav {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+header nav a:hover {
+    background-color: gray;
+    transition: background-color 0.3s ease;
+}
+h2, h3 {
+    margin-top: 5px;
+    text-align: center;
+}
+.first-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout for sections */
+    grid-template-rows: auto; /* Adjust rows automatically */
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.projects {
+    grid-column: 1 / -1; /* Span the entire row */
+}
+section, article {
+    border: 2px solid #999;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Adjust to fit content */
+    grid-gap: 10px;
+}
+.section-image {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+.social a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.social a:hover {
+    color: blue;
+    transition: color 0.3s ease;
+}
+footer {
+    text-align: center; 
+    padding: 20px; 
+    background-color: #333; 
+    color: white; 
+    font-size: 14px; 
+    margin-top: 20px; 
+}
+
+/* Responsive Design for Small Screens */
+@media only screen and (max-width: 450px) {
+    .first-row {
+        grid-template-columns: 1fr;
+    }
+    .main-layout {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#certification">Certification</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#contact">Contact</a>
+            <a href="#social">Social</a>
+        </nav>
+    </header>
+    <main>
+        <div class="first-row">
+            <section id="profile" class="profile">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile Image" class="section-image">
+                <h2>Arjun Reddy</h2>
+                <p>M.S in Computer Science</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac neque nec eros dignissim congue.</p>
+            </section>
+            <section id="skills" class="skills">
+                <img src="https://arjunreddy979.github.io/arjun-portfolio/skill-section-image.jpg" alt="Skills Section Image" class="section-image">
+                <h2>Skills</h2>
+                <p>HTML, CSS, JavaScript, Python, Git</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
+        </div>
+        <div class="main-layout clearfix">
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+                <div class="projects-container">
+                    <article class="project">
+                        <img src="https://arjunreddy979.github.io/arjun-portfolio/project1-image.jpg" alt="Project 1 Image" class="section-image">
+                        <h3>Project 1</h3>
+                        <p>Description of project 1</p>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                    </article>
+                    <article class="project">
+                        <img src="https://arjunreddy979.github.io/arjun-portfolio/project2-image.jpg" alt="Project 2 Image" class="section-image">
+                        <h3>Project 2</h3>
+                        <p>Description of project 2</p>
+                        <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    </article>
+                    <article class="project">
+                        <img src="https://arjunreddy979.github.io/arjun-portfolio/project3-image.jpg" alt="Project 3 Image" class="section-image">
+                        <h3>Project 3</h3>
+                        <p>Description of project 3</p>
+                        <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."</p>
+                    </article>
+                </div>
+            </section>
+            <section id="education" class="education">
+                <img src="https://arjunreddy979.github.io/arjun-portfolio/education-section-image.jpg" alt="Education Section Image" class="section-image">
+                <h2>Education</h2>
+                <p>Details about your education background.</p>
+                <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium"</p>
+            </section>
+            <section id="experience" class="experience">
+                <img src="https://arjunreddy979.github.io/arjun-portfolio/experience-section-image.jpg" alt="Experience Section Image" class="section-image">
+                <h2>Experience</h2>
+                <p>Details about your professional experiences.</p>
+                <p>"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium"</p>
+            </section>
+            <section id="certification" class="certification">
+                <img src="https://arjunreddy979.github.io/arjun-portfolio/certification-section-image.jpg" alt="Certification Section Image" class="section-image">
+                <h2>Certification</h2>
+                <p>Details about your certifications.</p>
+                <p>"To take a trivial example, which of us ever undertakes laborious physical exercise. a trivial example, which of us ever undertakes laborious physical exercise."</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
+            </section>
+            <section id="blogs" class="blogs">
+                <img src="https://arjunreddy979.github.io/arjun-portfolio/blogs-section-image.jpg" alt="Blogs Section Image" class="section-image">
+                <h2>Blogs</h2>
+                <p>Details about your blog posts.</p>
+                <p>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
+            </section>
+            <section id="contact" class="contact">
+                <img src="https://arjunreddy979.github.io/arjun-portfolio/contact-section-image.jpg" alt="Contact Section Image" class="section-image">
+                <h2>Contact</h2>
+                <p>Email: lorem@unh.newhaven.edu</p>
+                <p>Phone: (555) 666-8989</p>
+            </section>
+            <section id="social" class="social">
+                <img src="https://arjunreddy979.github.io/arjun-portfolio/social-section-image.jpg" alt="Social Media Section Image" class="section-image">
+                <h2>Connect with Me</h2>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> | 
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p >&copy; 2024 Arjun Reddy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

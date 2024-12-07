@@ -1,0 +1,50 @@
+{
+  "fitness_tracker": [
+    {
+      "id": 1,
+      "image":"https://cdn-icons-png.flaticon.com/512/4202/4202841.png",
+      "user_name": "shiva",
+      "workout_type": "Running",
+      "duration_minutes": 45,
+      "calories_burned": 350,
+      "date": "2024-10-22"
+    },
+    {
+      "id": 2,
+      "user_name": "ria",
+      "image": "https://cdn-icons-png.flaticon.com/512/5231/5231019.png",
+      "workout_type": "Cycling",
+      "duration_minutes": 60,
+      "calories_burned": 500,
+      "date": "2024-10-21"
+    },
+    {
+      "id": 3,
+      "user_name": "Arjun",
+      "image":"https://cdn-icons-png.flaticon.com/512/4202/4202841.png",
+      "workout_type": "Weightlifting",
+      "duration_minutes": 30,
+      "calories_burned": 250,
+      "date": "2024-10-20"
+    },
+    {
+      "id": 4,
+      "user_name": "avinash",
+      "image":"https://cdn-icons-png.flaticon.com/512/4202/4202841.png",
+      "workout_type": "Yoga",
+      "duration_minutes": 60,
+      "calories_burned": 200,
+      "date": "2024-10-19"
+    },
+    {
+      "id": 5,
+      "image":"https://cdn-icons-png.flaticon.com/512/4202/4202841.png",
+      "user_name": "ajay",
+      "workout_type": "Swimming",
+      "duration_minutes": 30,
+      "calories_burned": 400,
+      "date": "2024-10-18"
+
+    }
+  ]
+}
